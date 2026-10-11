@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>MEDIA\DOTA2RunesTimerIco.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MEDIA\TRAJAN PRO FONTS\TrajanPro-Bold.otf" />
+    <None Remove="MEDIA\TRAJAN PRO FONTS\TrajanPro-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="MEDIA\DOTA2RunesTimerIco.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+    <PackageReference Include="MahApps.Metro" Version="2.4.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="MEDIA\TRAJAN PRO FONTS\TrajanPro-Bold.otf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="MEDIA\TRAJAN PRO FONTS\TrajanPro-Regular.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
